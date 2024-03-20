@@ -1,0 +1,6 @@
+from .department_appraisal import department_appraisal_actions # CRUDDepartmentAppraisal
+from .department_target import department_target_actions #CRUDDepartmentTarget
+from .firm_target import  firm_target_actions #CRUDFirmTarget
+from .review_period import review_period_actions #CRUDReviewPeriod
+from .staff_target import staff_target_actions #CRUDStaffAppraisal
+from .staff_appraisal import staff_appraisal_actions #CRUDStaffAppraisal

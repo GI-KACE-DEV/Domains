@@ -1,0 +1,16 @@
+from fastapi import APIRouter
+from .review_period import review_period_router
+from .firm_target import firm_target_router
+from .department_target import department_target_router
+from .department_appraisal import department_appraisal_router
+from .staff_target import staff_target_router
+from .staff_appraisal import staff_appraisal_router
+
+appraisal_root_router  = APIRouter(prefix="/appraisals")
+
+appraisal_root_router.include_router(review_period_router)
+appraisal_root_router.include_router(firm_target_router)
+appraisal_root_router.include_router(department_target_router)
+appraisal_root_router.include_router(department_appraisal_router)
+appraisal_root_router.include_router(staff_target_router)
+appraisal_root_router.include_router(staff_appraisal_router)
